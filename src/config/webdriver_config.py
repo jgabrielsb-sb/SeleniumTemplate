@@ -1,4 +1,4 @@
-from core.models import dto_webdriver_config
+from core.models.dto import dto_webdriver_config
 
 from pathlib import Path
 
