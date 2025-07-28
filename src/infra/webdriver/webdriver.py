@@ -1,6 +1,6 @@
 from config import webdriver_config
 
-from core.models import dto_webdriver_config
+from core.models.dto import dto_webdriver_config
 
 from infra.webdriver.initializers import LocalChromeWithDownloadInitializer
 
