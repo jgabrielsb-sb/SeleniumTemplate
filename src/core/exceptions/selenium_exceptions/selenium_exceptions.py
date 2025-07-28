@@ -1,0 +1,5 @@
+
+
+
+class SeleniumBaseActionException(Exception):
+    pass
