@@ -23,9 +23,13 @@ class Result(BaseModel):
                 raise ValueError('why_error is required when status is FAILED')
         return self
 
+class Retry(BaseModel):
+    retry_index: int
+    why_error: Optional[str] = None
+
 class ActionResult(BaseModel):
     result: Result
-    retries: int
+    retries: List[Retry]
 
 class ComposedActionResult(BaseModel):
     result: Result
